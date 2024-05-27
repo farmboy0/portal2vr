@@ -15,6 +15,7 @@ compiler_args = [
   '-msse3',
   '-mfpmath=sse',
   '-Wimplicit-fallthrough',
+  '-fpermissive',
   # gcc
   '-Wno-missing-field-initializers',
   '-Wno-unused-parameter',

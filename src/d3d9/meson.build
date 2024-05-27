@@ -46,10 +46,16 @@ d3d9_src = [
   'd3d9_window.cpp',
   'd3d9_interop.cpp',
   'd3d9_on_12.cpp',
-  'd3d9_bridge.cpp'
+  'd3d9_bridge.cpp',
+  'd3d9_vr.cpp',
+  'checksum_crc.cpp',
+  'dllmain.cpp',
+  'game.cpp',
+  'hooks.cpp',
+  'vr.cpp'
 ]
 
-d3d9_ld_args      = []
+d3d9_ld_args      = [ '-L../lib', '-lopenvr_api', '-lMinHook' ]
 d3d9_link_depends = []
 
 if platform != 'windows'
